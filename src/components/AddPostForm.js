@@ -20,7 +20,7 @@ const handleSubmit =(e)=> {
     //preparing a new post object
     const newPost = {...formData, id: nanoid()}
 //dispatch an action
-dispatch(addPost(newPost))
+dispatch(addPost(formData.title,formData.content))
 //reset the form state
 setFormData({
     title: "",

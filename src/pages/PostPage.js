@@ -5,7 +5,7 @@ export default function PostPage(){
 const {id} = useParams()
 
 //gets the post in state and finds the post with the id from the params
-const post = useSelector(state => state.posts.find((post) => post.id === id))
+const post = useSelector(state => state.posts.find((post) => post.id == id))
     return(
         <div>
             <h1>Post Page Compoment</h1>
